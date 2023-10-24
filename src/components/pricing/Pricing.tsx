@@ -123,7 +123,9 @@ const Pricing = () => {
                       </p>
                       <p>{speed} mbps</p>
                       <p>{devices} Devices</p>
-                      <button className="btn btn-3">Get Started</button>
+                      <a href="#contacts">
+                        <button className="btn btn-3">Get Started</button>
+                      </a>
                     </div>
                   </Reveal>
                 );

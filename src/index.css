@@ -27,9 +27,7 @@ a{
   font-weight: 500;
   text-decoration: none;
 }
-a:hover{
-  color: var(--accent-color);
-}
+
 p{
   font-size: 1.3rem;
   color: #392616;

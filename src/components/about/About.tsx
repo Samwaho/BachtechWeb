@@ -32,7 +32,9 @@ const About = () => {
             </p>
           </Reveal>
           <Reveal>
-            <button className="btn mt-lg-4 mt-sm-3">Contact Us</button>
+            <a href="#contacts">
+              <button className="btn mt-lg-4 mt-sm-3">Contact Us</button>
+            </a>
           </Reveal>
         </div>
       </div>

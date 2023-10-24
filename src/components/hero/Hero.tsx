@@ -24,7 +24,11 @@ const Hero = () => {
             </p>
           </Reveal>
           <Reveal>
-            <button className="btn mt-lg-4 mt-sm-2 mb-3">See our plans</button>
+            <a href="#pricing">
+              <button className="btn mt-lg-4 mt-sm-2 mb-3">
+                See our plans
+              </button>
+            </a>
           </Reveal>
         </div>
         <div className="col-lg-5 col-sm-12">
