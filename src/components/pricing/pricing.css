@@ -1,0 +1,86 @@
+#pricing{
+    margin-top: 100px;
+    position: relative;
+}
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.category button{
+    width: 100px;
+}
+
+.btn-2{
+    background-color: transparent;
+    border: 1px solid #605e5eae;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 4px;
+    box-shadow: 0px 10px 20px -10px rgba(23, 31, 29, 0.4)
+}
+.category .btn:hover{
+    background: linear-gradient(
+  157.81deg,
+  #faefde -43.27%,
+  #f5e4be -21.24%,
+  #f0c69d 12.19%,
+  #ebba7d 29.82%,
+  #e69a5c 51.94%,
+  #cf8133 90.29%
+);
+border: none;
+  }
+.packages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.package{
+    padding: 20px;
+    border: 1px solid #605e5eae;
+    border-radius: 20px;
+    text-align: center;
+}
+.package p{
+    border-bottom: 1px solid #605e5eae;
+}
+.package i{
+    font-size: 1.5rem;
+}
+.package span{
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.btn-3{
+    width: 100%;
+}
+.pricing-blur{
+    width: 10rem;
+    height: 20rem;
+    left:20%;
+    top: 0;
+}
+@media only screen and (max-width: 768px) {
+    .packages{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .package{
+        padding: 20px 10px;
+    }
+    #pricing{
+        margin-top: 70px;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    .packages{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+  }

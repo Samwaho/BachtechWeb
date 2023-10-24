@@ -1,0 +1,32 @@
+#hero{
+    position: relative;
+}
+#hero img{
+    width: 500px;
+}
+.hero-text{
+    margin: 70px 20px;
+}
+.hero-blur{
+    width: 10rem;
+    height: 20rem;
+    left:10%;
+    top: -20px;
+}
+@media only screen and (max-width: 768px) {
+    
+    #hero img{
+        width: 300px;
+        margin-left: 15px;
+    }
+    .hero-text{
+        margin: 40px 15px;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    
+    #hero img{
+        width: 250px;
+        margin-left: 15px;
+    }
+  }

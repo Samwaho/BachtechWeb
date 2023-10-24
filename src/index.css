@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+  --background-color: #f6f6f6;
+  --primary-text-color: #111111;
+  --secondary-color: #2f2f2f;
+  --accent-color: #ef6824;
+}
+
+body {
+  background: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+}
+
+.navbar {
+  background-color: var(--secondary-color);
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+}
+a{
+  color: var(--primary-text-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover{
+  color: var(--accent-color);
+}
+p{
+  font-size: 1.3rem;
+  color: #392616;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 2rem;
+  color: var(--primary-text-color);
+}
+h4{
+  color: var(--accent-color);
+  font-size: 1.5rem;
+}
+hr{
+  width: 20%;
+  margin: 10px auto;
+  color: var(--accent-color);
+}
+ul{
+  list-style: none;
+}
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #665341 0.89%,
+    #6e5942 17.23%,
+    #604d3b 42.04%,
+    #382c22 55.12%,
+    #3b2a1c 71.54%,
+    #251c14 100%
+  );
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.text-gradient-2 {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #f0ab6a 0.89%,
+    #fbcfa1 17.23%,
+    #f6c393 42.04%,
+    #feac68 55.12%,
+    #f69c53 71.54%,
+    #fb9f4f 100%
+  );
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.btn{
+  background: linear-gradient(
+  157.81deg,
+  #faefde -43.27%,
+  #f5e4be -21.24%,
+  #f0c69d 12.19%,
+  #ebba7d 29.82%,
+  #e69a5c 51.94%,
+  #cf8133 90.29%
+);
+border: none;
+font-size: 1rem;
+font-weight: 500;
+box-shadow: 0px 10px 20px -10px rgba(23, 31, 29, 0.4)
+}
+.btn:hover{
+  background: transparent;
+  border: 1px solid #111111;
+}
+.box-shadow{
+  box-shadow: 0px 10px 20px -10px rgba(23, 31, 29, 0.4)
+}
+.blur{
+  background: rgba(75, 65, 60, 0.592);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -9;
+}
+@media only screen and (max-width: 768px) {
+  h2{
+      font-size: 2.4rem;
+  }
+  p{
+      font-size: 1.1rem;
+  }
+  h3{
+      font-size: 2rem;
+  }
+  h4{
+      font-size: 1.3rem;
+  }
+  hr{
+    width: 50%;
+  }
+}
