@@ -7,6 +7,7 @@ import { BsInstagram } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { BsYoutube } from "react-icons/bs";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import logo from "../../assets/bachtechlogo.png";
 const Footer = () => {
   const d = new Date();
   let year = d.getFullYear();
@@ -44,38 +45,99 @@ const Footer = () => {
     },
   ];
   return (
-    <section id="footer">
-      <div id="footer-items" className="">
-        <div className="socials">
-          {socials.map(({ id, icon, href }) => {
-            return (
-              <Reveal key={id}>
-                <a href={href} target="_blank">
-                  <i className="box-shadow">{icon}</i>
-                </a>
-              </Reveal>
-            );
-          })}
-        </div>
-        <div className="footer-menu">
-          <ul>
-            {links.map((link: Link) => {
-              return (
-                <Reveal key={link.id}>
-                  <li>
-                    <a href={link.href}>{link.text}</a>
-                  </li>
+    <section id="Footer">
+      <footer id="footer" className="footer-1">
+        <div className="main-footer widgets-dark typo-light">
+          <div className="container">
+            <div className="row">
+              <div className="col-xs-12 col-sm-6 col-md-3">
+                <Reveal>
+                  <div className="widget subscribe no-box">
+                    <h5 className="widget-title">
+                      Bachtech Solutions<span></span>
+                    </h5>
+                    <img src={logo} alt="image" />
+                    <p className="mt-2">Headquaters: Highpoint, Juja </p>
+                  </div>
                 </Reveal>
-              );
-            })}
-          </ul>
+              </div>
+
+              <div className="col-xs-12 col-sm-6 col-md-3">
+                <Reveal>
+                  <div className="widget no-box">
+                    <h5 className="widget-title">
+                      Quick Links<span></span>
+                    </h5>
+                    <ul className="thumbnail-widget">
+                      {links.map((links: Link) => {
+                        return (
+                          <li key={links.id}>
+                            <div className="thumb-content">
+                              <a href={links.href}>{links.text}</a>
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </Reveal>
+              </div>
+
+              <div className="col-xs-12 col-sm-6 col-md-3">
+                <Reveal>
+                  <div className="widget no-box">
+                    <h5 className="widget-title">
+                      Get Connected<span></span>
+                    </h5>
+                    <p>Contact us to get any of our services.</p>
+                    <a className="btn" href="#contacts">
+                      Contact Us
+                    </a>
+                  </div>
+                </Reveal>
+              </div>
+
+              <div className="col-xs-12 col-sm-6 col-md-3">
+                <Reveal>
+                  <div className="widget no-box">
+                    <h5 className="widget-title">
+                      Social Links<span></span>
+                    </h5>
+                    <p>
+                      <a href="bachemsolutions@gmail.com" title="Bachtexh">
+                        bachemsolutions@gmail.com
+                      </a>
+                    </p>
+                    <ul className="social-footer2">
+                      {socials.map(({ id, icon, href }) => {
+                        return (
+                          <li key={id}>
+                            <a href={href} target="_blank">
+                              {icon}
+                            </a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </Reveal>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <Reveal>
-        <p className="text-center mx-3">
-          Copyright &copy; BachtechSolutions.{year}. All rights reserved
-        </p>
-      </Reveal>
+
+        <div className="footer-copyright pb-3">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <p>
+                  Copyright © Bachtech Solutions {year}. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
   );
 };

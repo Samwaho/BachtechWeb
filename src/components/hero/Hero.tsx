@@ -7,8 +7,8 @@ const Hero = () => {
       <Reveal>
         <div className="blur hero-blur"></div>
       </Reveal>
-      <div className="container row ms-lg-4">
-        <div className="col-lg-6 col-sm-12 hero-text">
+      <div className="container hero-container">
+        <div className="hero-text">
           <Reveal>
             <h4 className="mt-lg-3">Strating at Ksh.1500/month</h4>
           </Reveal>
@@ -31,7 +31,7 @@ const Hero = () => {
             </a>
           </Reveal>
         </div>
-        <div className="col-lg-5 col-sm-12">
+        <div className="">
           <Reveal>
             <img src={heroImg} alt="image" />
           </Reveal>
