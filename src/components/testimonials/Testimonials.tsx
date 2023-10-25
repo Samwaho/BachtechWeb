@@ -1,5 +1,8 @@
 import "./testimonials.css";
 import IMG from "../../assets/bachtechlogo.png";
+import IMG2 from "../../assets/OPTIVUM WEB DEV LOGO..png";
+import IMG3 from "../../assets/portrait-african-girl-with-braids.jpg";
+import IMG4 from "../../assets/casual-young-african-man-smiling-isolated-white.jpg";
 import { FaThumbsUp } from "react-icons/fa";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,23 +23,31 @@ const Testimonials = () => {
       name: "BachTech",
       review:
         "I recently had the pleasure of working with Bachtech Solutions for both internet provision and CCTV installation, and I couldn't be more satisfied with the results.",
-      rating: "4.5",
+      rating: "4.7",
     },
     {
       id: 2,
-      avatar: IMG,
-      name: "BachTech",
+      avatar: IMG2,
+      name: "Optivum Web Developers",
       review:
-        "I recently had the pleasure of working with Bachtech Solutions for both internet provision and CCTV installation, and I couldn't be more satisfied with the results.",
+        "We've been a loyal customer of this company for years, and they never disappoint. The internet is reliable, and the CCTV installations are flawless. Highly recommended!",
       rating: "4.5",
     },
     {
       id: 3,
-      avatar: IMG,
-      name: "BachTech",
+      avatar: IMG3,
+      name: "Susan Kerubo",
       review:
-        "I recently had the pleasure of working with Bachtech Solutions for both internet provision and CCTV installation, and I couldn't be more satisfied with the results.",
-      rating: "4.5",
+        "A fantastic experience with this company. The internet is blazing fast, and the CCTV system keeps my home secure. Their professionalism shines through.",
+      rating: "4.6",
+    },
+    {
+      id: 4,
+      avatar: IMG4,
+      name: "Daniel Mwangi",
+      review:
+        "A five-star experience all around. The digital locks are a revelation, and the internet is super fast. The support team is fantastic too!",
+      rating: "4.8",
     },
   ];
   return (
@@ -54,7 +65,7 @@ const Testimonials = () => {
           spaceBetween={40}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 3500,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
@@ -65,7 +76,7 @@ const Testimonials = () => {
         >
           {data.map(({ id, avatar, name, review, rating }) => {
             return (
-              <Reveal>
+              <Reveal key={id}>
                 <SwiperSlide key={id} className="testimonial box-shadow">
                   <div className="client__avatar">
                     <Reveal>

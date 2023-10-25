@@ -19,7 +19,7 @@ const About = () => {
         <div className="about-txt col-lg-6 col-sm-12 mt-lg-5 ps-4">
           <Reveal>
             <h3 className="text-gradient mt-3">
-              BachTech Solutions <br /> Advancing Through Technology.
+              BachTech Solutions. <br /> Advancing Through Technology.
             </h3>
           </Reveal>
           <Reveal>
