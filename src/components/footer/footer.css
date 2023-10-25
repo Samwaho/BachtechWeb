@@ -27,9 +27,9 @@
 .socials i{
     font-size: 1.3rem;
     background: #ffac53f9;
-    padding: 5px 10px;
+    padding: 8px;
     border: 1px solid #2d2624;
-    border-radius: 100%;
+    border-radius: 50%;
     cursor: pointer;
 }
 .socials i:hover{
