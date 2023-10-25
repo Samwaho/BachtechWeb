@@ -122,7 +122,9 @@ const Pricing = () => {
                         <span>Ksh.{price}</span>/mo
                       </p>
                       <p>{speed} mbps</p>
-                      <p>{devices} Devices</p>
+                      <p>
+                        {devices} <small>Devices</small>
+                      </p>
                       <a href="#contacts">
                         <button className="btn btn-3">Get Started</button>
                       </a>
