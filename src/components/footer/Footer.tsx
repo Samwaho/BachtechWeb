@@ -71,11 +71,13 @@ const Footer = () => {
                     <ul className="thumbnail-widget">
                       {links.map((links: Link) => {
                         return (
-                          <li key={links.id}>
-                            <div className="thumb-content">
-                              <a href={links.href}>{links.text}</a>
-                            </div>
-                          </li>
+                          <Reveal key={links.id}>
+                            <li key={links.id}>
+                              <div className="thumb-content">
+                                <a href={links.href}>{links.text}</a>
+                              </div>
+                            </li>
+                          </Reveal>
                         );
                       })}
                     </ul>
