@@ -1,8 +1,12 @@
 import "./testimonials.css";
-import IMG from "../../assets/bachtechlogo.png";
+import IMG from "../../assets/PCEA.png";
 import IMG2 from "../../assets/OPTIVUM WEB DEV LOGO..png";
 import IMG3 from "../../assets/portrait-african-girl-with-braids.jpg";
 import IMG4 from "../../assets/casual-young-african-man-smiling-isolated-white.jpg";
+import IMG5 from "../../assets/N SQUARED.png";
+import IMG6 from "../../assets/INSTANBUL.png";
+import IMG7 from "../../assets/GYJAVILLE.png";
+import IMG8 from "../../assets/ENEZA  HOUSING.png";
 import { FaThumbsUp } from "react-icons/fa";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,9 +24,9 @@ const Testimonials = () => {
     {
       id: 1,
       avatar: IMG,
-      name: "BachTech",
+      name: "PCEA-Juja",
       review:
-        "I recently had the pleasure of working with Bachtech Solutions for both internet provision and CCTV installation, and I couldn't be more satisfied with the results.",
+        "We recently had the pleasure of working with Bachtech Solutions for both internet provision and CCTV installation, and we couldn't be more satisfied with the results.",
       rating: "4.7",
     },
     {
@@ -46,8 +50,40 @@ const Testimonials = () => {
       avatar: IMG4,
       name: "Daniel Mwangi",
       review:
-        "A five-star experience all around. The digital locks are a revelation, and the internet is super fast. The support team is fantastic too!",
+        "I can't praise this company enough. The internet is top-tier, and their automated security are impeccable. I feel safer and more connected than ever.",
       rating: "4.8",
+    },
+    {
+      id: 5,
+      avatar: IMG5,
+      name: "N Squared",
+      review:
+        "A five-star experience all around. The digital locks are a revelation, and the internet is super fast. The support team is fantastic too!",
+      rating: "4.2",
+    },
+    {
+      id: 6,
+      avatar: IMG6,
+      name: "Instanbul",
+      review:
+        "I'm thrilled with the services offered by this company. The internet is superb, and the CCTV installations are top-notch. Truly a class act!",
+      rating: "4.6",
+    },
+    {
+      id: 7,
+      avatar: IMG7,
+      name: "Gyjaville Homes",
+      review:
+        "We've never had such a seamless experience with an internet provider. The CCTV system is an added bonus. This company truly understands security and connectivity.",
+      rating: "4.8",
+    },
+    {
+      id: 8,
+      avatar: IMG8,
+      name: "Eneza Housing",
+      review:
+        "Outstanding! The digital locks are a game-changer. They've made access control a breeze, and the internet is speedy. A winning combination.",
+      rating: "4.3",
     },
   ];
   return (
