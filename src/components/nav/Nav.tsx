@@ -21,7 +21,7 @@ const NavComponent = () => {
         <h3 className="ms-2 mt-2 text-gradient">BachTech Solutions</h3>
       </Reveal>
       <button className="menu-toggle ms-5" onClick={toggleMenu}>
-        {isMenuOpen ? <AiOutlineClose /> : <HiMenuAlt2 />}
+        <Reveal>{isMenuOpen ? <AiOutlineClose /> : <HiMenuAlt2 />}</Reveal>
         {/* Use AiOutlineClose icon when the menu is open, HiMenuAlt2 icon when closed */}
       </button>
       <ul id="nav-items" className={`mx-auto ul ${isMenuOpen ? "active" : ""}`}>
