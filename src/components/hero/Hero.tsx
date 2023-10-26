@@ -23,13 +23,18 @@ const Hero = () => {
               much affordable prices.
             </p>
           </Reveal>
-          <Reveal>
-            <a href="#pricing">
-              <button className="btn mt-lg-4 mt-sm-2 mb-3">
-                See our plans
-              </button>
-            </a>
-          </Reveal>
+          <div className="hero-btns mt-lg-4 mt-sm-2 mb-3">
+            <Reveal>
+              <a href="#pricing">
+                <button className="btn">See our plans</button>
+              </a>
+            </Reveal>
+            <Reveal>
+              <a href="https://fast.com/" target="_blank">
+                <button className="btn-2">Test Speed</button>
+              </a>
+            </Reveal>
+          </div>
         </div>
         <div className="">
           <Reveal>
