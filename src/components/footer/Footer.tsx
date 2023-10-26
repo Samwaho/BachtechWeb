@@ -132,8 +132,18 @@ const Footer = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <p>
+                <p className="mt-2">
                   Copyright © Bachtech Solutions {year}. All rights reserved.
+                </p>
+                <p className="mt-2 powered">
+                  Made By :{" "}
+                  <a
+                    className="powered-a"
+                    href="https://optivumwebdevelopers.co.ke"
+                    target="_blank"
+                  >
+                    optivumwebdevelopers.co.ke
+                  </a>
                 </p>
               </div>
             </div>

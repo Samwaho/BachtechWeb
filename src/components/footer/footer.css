@@ -54,6 +54,16 @@ ul.social-footer2 li {color: #f9f9f9; display: inline-block;padding: 0;}
 ul.social-footer2 li a:hover {color: #ff8d1e;}
 ul.social-footer2 li a { color: #252525; display: block; font-size: 1.3rem; text-align: center; margin-right: 20px;}
 
+.powered{
+  font-size: 1rem;
+}
+.powered-a{
+  font-size: 1rem;
+  color: var(--accent-color);
+}
+.powered-a:hover{
+  color: var(--primary-text-color);
+}
 @media only screen and (max-width: 425px) {
   .widget li a, p a{font-size: 1.3rem;}
   ul.social-footer2 li a {font-size: 1.5rem; margin-right: 15px;}

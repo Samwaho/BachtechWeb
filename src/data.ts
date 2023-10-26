@@ -31,5 +31,10 @@ export interface Link {
       href: "#contacts",
       text: "Contacts",
     },
+    {
+      id: 6,
+      href: "https://v3.netpap.co.ke/management/login/?hotspot=ST79414368",
+      text: "Hotspot",
+    },
   ];
 
