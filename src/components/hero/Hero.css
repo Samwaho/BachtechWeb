@@ -24,6 +24,137 @@
     align-items: center;
     gap: 20px;
 }
+.speed-test{
+    position: absolute;
+    transform: translate(100%, 0);
+    z-index: 4;
+}
+.speed-container{
+    position: relative;
+    background: linear-gradient(
+  157.81deg,
+  #faefde -43.27%,
+  #f5e4be -21.24%,
+  #fae6d2 12.19%,
+  #f2d5b1 29.82%,
+  #cdb19b 51.94%,
+  #ac9e91 90.29%
+);
+    filter: drop-shadow(0 0 12px #544c45c1);
+    border: 1px solid #2c272299;
+    display: inline-block;
+    padding: 32px;
+    border-radius: 24px;
+    text-align: center;
+}
+*.hide{
+    display: none !important;
+}
+.loader-widget{
+    width: 360px;
+    height: 350px;
+}
+.loader{
+    position: relative;
+    display: inline-block;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: conic-gradient(rgba(134, 95, 38, 0.718) 0%, transparent 65%);
+    animation: radarRotate 2s linear infinite;
+}
+@keyframes radarRotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.loader::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: calc(50% - 8px);
+    border: 8px solid transparent;
+    border-top: 120px solid #fca53a;
+    filter: drop-shadow(0 0 12px #fb7303);
+}
+.back-blur{
+    filter: blur(100px);
+}
+.loader-widget h3{
+    line-height: 1.3;
+    margin:10px 0 25px 0;
+}
+.loader-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.loader-content.result .check{
+    height: 120px;
+    width: 120px;
+}
+.check{
+    position: relative;
+    background: #fff9e8af;
+    height: 200px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: 0 0 12px #fc892a;
+}
+.check::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -2px;
+    left: -2px;
+    border: 2px solid #fb7303;
+    border-radius: 50%;
+    animation: btnRing 2s linear infinite;
+}
+@keyframes btnRing {
+    60%, 100%{
+        height: calc(100% + 60px);
+        width: calc(100% + 60px);
+        top: -32px;
+        left: -32px;
+        opacity: 0;
+    }
+}
+.check:hover{
+    background-color: #f0c893d0;
+}
+.check::after{
+    content: "";
+    position: absolute;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #6e4525 , #eed9c7);
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 5px 0 32px 0;
+}
+.content small{
+    font-size: 40%;
+}
+
+
 
 @media only screen and (max-width: 480px) {
     .hero-container{
@@ -36,6 +167,17 @@
     .hero-text{
         margin: 40px 15px;
     }
+    .loader-widget{
+        width: 250px;
+        height: 350px;
+    }
+    .speed-test{
+        transform: translate(30px, 40px);
+    }
+   .check{
+    height: 150px;
+    width: 150px;
+   }
   }
   @media only screen and (max-width: 300px) {
     

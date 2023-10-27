@@ -121,6 +121,16 @@ const Footer = () => {
                         );
                       })}
                     </ul>
+                    <p className="powered mt-4">
+                      Website By :{" "}
+                      <a
+                        className="powered-a"
+                        href="https://optivumwebdevelopers.co.ke"
+                        target="_blank"
+                      >
+                        optivumwebdevelopers.co.ke
+                      </a>
+                    </p>
                   </div>
                 </Reveal>
               </div>
@@ -128,22 +138,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-copyright pb-3">
+        <div className="footer-copyright pb-2">
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
                 <p className="mt-2">
                   Copyright © Bachtech Solutions {year}. All rights reserved.
-                </p>
-                <p className="mt-2 powered">
-                  Made By :{" "}
-                  <a
-                    className="powered-a"
-                    href="https://optivumwebdevelopers.co.ke"
-                    target="_blank"
-                  >
-                    optivumwebdevelopers.co.ke
-                  </a>
                 </p>
               </div>
             </div>

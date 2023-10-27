@@ -12,15 +12,7 @@
 #navbar li{
   position: relative;
 }
-#navbar li a::after{
-  content: "";
-  width: 50%;
-  height: 2px;
-  background: #ef6824;
-  position: absolute;
-  bottom: -2px;
-  left: 3px;
-}
+
 #navbar li a:hover::after{
   display: none;
   color: var(--accent-color);
@@ -28,7 +20,7 @@
 .ul{
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 30px;
   }
 .menu-toggle{
     display: none;

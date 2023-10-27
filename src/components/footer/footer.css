@@ -31,7 +31,7 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 ====================== */
 .widget{  padding: 20px;  margin-bottom: 20px;}
 .widget.widget-last{  margin-bottom: 0px;}
-.widget.no-box{ padding: 0; background-color: transparent;  margin-bottom: 40px;
+.widget.no-box{ padding: 0; background-color: transparent;  margin-bottom: 20px;
   box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
 .widget.subscribe p{  margin-bottom: 18px;}
 .widget li a, p a{ font-size: 1.2rem; font-weight: 400;}
@@ -59,7 +59,7 @@ ul.social-footer2 li a { color: #252525; display: block; font-size: 1.3rem; text
 }
 .powered-a{
   font-size: 1rem;
-  color: var(--accent-color);
+  color: #fd9227;
 }
 .powered-a:hover{
   color: var(--primary-text-color);
