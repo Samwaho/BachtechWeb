@@ -8,7 +8,7 @@ const Hero = () => {
     const calculateSpeed = () => {
       const imgLink =
         "https://upload.wikimedia.org/wikipedia/commons/6/6d/Tokyo_Sky_Tree_2012_%E2%85%A5.JPG";
-      const downloadSize = 1037374;
+      const downloadSize = 10373740;
       let timeStart: number, timeEnd, totalSpeed: string;
 
       document.querySelector(".loader-content")?.classList.add("hide");
