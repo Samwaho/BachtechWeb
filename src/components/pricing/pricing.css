@@ -2,6 +2,9 @@
     margin-top: 100px;
     position: relative;
 }
+#pricing small{
+    font-sive:1rem;
+}
 .category{
     display: flex;
     align-items: center;
